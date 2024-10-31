@@ -1,12 +1,4 @@
-<!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Announcement Program</title>
-    <style>
-      /* CSS styles */
-      body {
+body {
         font-family: Arial, sans-serif;
         display: flex;
         justify-content: center;
@@ -56,27 +48,3 @@
         font-size: 18px;
         color: #007bff;
       }
-    </style>
-  </head>
-  <body>
-    <div class="container">
-      <h1>Announcement Program</h1>
-      <input
-        type="text"
-        id="announcementInput"
-        placeholder="Type your announcement here"
-      />
-      <button onclick="displayAnnouncement()">Announce</button>
-      <div class="announcement" id="announcementDisplay"></div>
-    </div>
-
-    <script>
-      // JavaScript function to display announcement
-      function displayAnnouncement() {
-        const input = document.getElementById("announcementInput").value;
-        const display = document.getElementById("announcementDisplay");
-        display.textContent = input ? input : "Please enter an announcement.";
-      }
-    </script>
-  </body>
-</html>
